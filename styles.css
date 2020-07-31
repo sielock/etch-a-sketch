@@ -1,0 +1,67 @@
+:root {
+    --grid-rows: 1;
+    --grid-cols: 1;
+    --rand-hex: #000000;
+    --fade-in: 0;
+}
+body {
+    background-color: #ccccff;
+}
+
+#top {
+    padding-bottom: 10px;
+    background-color: teal;
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#buttons {
+    text-align: center;
+}
+
+#buttons button {
+    padding: 6px;
+    background: #ccccff;
+    border: 1px grey solid;
+    border-radius: 6px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    height: 960px;
+    width: 960px;
+    background-color: white;
+    margin: 0 auto ;
+    border: 1px solid grey;
+}
+
+
+.square {
+    background: white;
+}
+
+.default{
+    background: black;
+}
+
+.random{
+    background: var(--rand-hex);
+}
+
+.greyScale {
+    background: black;
+    opacity: var(--fade-in);
+}
